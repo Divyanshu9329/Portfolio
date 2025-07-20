@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import avatar from "../assets/avatar4.png";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -46,12 +47,7 @@ function Home() {
           >
             Download Resume
           </a>
-          <a
-            href="/contact"
-            className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition w-full sm:w-auto text-center"
-          >
-            Contact Me
-          </a>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition w-full sm:w-auto text-center">Contact Me</Link>
         </div>
       </motion.div>
 
