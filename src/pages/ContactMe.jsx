@@ -92,13 +92,13 @@ const ContactMe = () => {
       <footer className="mt-16 text-center">
         <p className="mb-2 text-lg font-semibold">Connect with me</p>
         <div className="flex justify-center gap-6 text-2xl md:text-3xl">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Divyanshu9329" target="_blank" rel="noopener noreferrer">
             <FaGithub className="hover:text-blue-500 transition" />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/divyanshu-pandey-b51556286/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="hover:text-blue-500 transition" />
           </a>
-          <a href="mailto:youremail@example.com">
+          <a href="mailto:divyanshupandey9329@gmail.com">
             <FaEnvelope className="hover:text-blue-500 transition" />
           </a>
         </div>
