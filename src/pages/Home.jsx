@@ -35,7 +35,7 @@ function Home() {
         />
 
         <p className="text-gray-700 dark:text-gray-300 max-w-xl mx-auto md:mx-0 mt-4 px-2 sm:px-0">
-          I'm a passionate B.Tech IT student from Rajasthan, diving deep into emerging technologies like Blockchain, Web3, and Full Stack Development. I love building innovative web apps, exploring smart contracts, and pushing the boundaries of what's possible with code.
+          I'm a passionate B.Tech IT student from Indore, diving deep into emerging technologies like Blockchain, Web3, and Full Stack Development. I love building innovative web apps, exploring smart contracts, and pushing the boundaries of what's possible with code.
         </p>
 
         <div className="flex flex-col sm:flex-row sm:justify-center md:justify-start items-center gap-4 mt-6">

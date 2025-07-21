@@ -99,7 +99,7 @@ const ContactMe = () => {
           </a>
         </div>
         <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Divyanshu. All rights reserved.
         </p>
       </footer>
     </div>
