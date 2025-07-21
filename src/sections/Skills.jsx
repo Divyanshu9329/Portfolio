@@ -90,7 +90,6 @@ const Skills = () => {
           </p>
         </div>
 
-        {/* Flex layout */}
         <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
           {/* Left: Skills Grid */}
           <div className="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -108,7 +107,6 @@ const Skills = () => {
             ))}
           </div>
 
-          {/* Right: Avatar */}
           <div className="flex-1 flex justify-center mb-10 md:mb-0">
             <img
               src={Avatar}

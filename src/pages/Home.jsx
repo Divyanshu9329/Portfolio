@@ -9,7 +9,6 @@ function Home() {
       id="home"
       className="pt-24 md:pt-32 px-4 sm:px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10 min-h-[90vh] -mt-20"
     >
-      {/* Left Text Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -51,7 +50,6 @@ function Home() {
         </div>
       </motion.div>
 
-      {/* Right Avatar Section */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

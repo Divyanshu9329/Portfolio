@@ -40,10 +40,8 @@ const ContactMe = () => {
     <div className="min-h-screen flex flex-col justify-between bg-white dark:bg-gray-900 text-gray-900 dark:text-white py-12 px-4 sm:px-6 lg:px-20">
       <Toaster position="top-center" />
 
-      {/* Main Section */}
       <div className="flex flex-col lg:flex-row items-center justify-center gap-10 w-full">
         
-        {/* Avatar Section */}
         <div className="w-full lg:w-1/2 flex justify-center items-center">
           <img
             src={Avatar}
@@ -52,7 +50,6 @@ const ContactMe = () => {
           />
         </div>
 
-        {/* Contact Form */}
         <div className="w-full max-w-xl bg-gray-100 dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-xl">
           <h2 className="text-3xl font-semibold mb-6 text-center">Get In Touch</h2>
           <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
@@ -88,7 +85,6 @@ const ContactMe = () => {
         </div>
       </div>
 
-      {/* Footer Section */}
       <footer className="mt-16 text-center">
         <p className="mb-2 text-lg font-semibold">Connect with me</p>
         <div className="flex justify-center gap-6 text-2xl md:text-3xl">
