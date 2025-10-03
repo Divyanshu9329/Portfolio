@@ -1,74 +1,71 @@
+import React from "react";
+import AboutHero from "../components/about/AboutHero";
+import Timeline from "../components/about/Timeline";
+import PersonalTouch from "../components/about/PersonalTouch";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import avatar from "../assets/avatar1.png";
-import Skills from "../sections/Skills";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
-  useEffect(() => {
-    window.scrollTo(0, 0); // scroll to top on mount
-  }, []);
-
+  const navigate = useNavigate();
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="min-h-screen bg-[#f9f9f9] dark:bg-[#0e0e10] px-6 py-12 md:py-24 flex flex-col items-center text-gray-800 dark:text-gray-100"
-    >
-      <div className="max-w-6xl w-full mx-auto flex flex-col md:flex-row items-center justify-between">
-        {/* Image */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-          <img
-            src={avatar}
-            alt="Divyanshu Avatar"
-            className="w-64 sm:w-72 md:w-70 h-auto object-contain drop-shadow-xl ml-25"
-          />
-        </div>
+    <div className="pt-16 overflow-hidden">
+      
 
-        {/* Content */}
-        <div className="md:w-1/2 md:pl-12 text-left mr-25">
-          <h1 className="text-5xl font-bold mb-6 text-gray-900 dark:text-white tracking-tight">
-            ABOUT <span className="text-indigo-600 dark:text-pink-500">ME</span>
-          </h1>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-            Hello! I’m <strong>Divyanshu Pandey</strong>, a tech enthusiast currently pursuing my B.Tech in Information Technology.
-            I'm deeply passionate about innovation, building impactful digital solutions, and staying ahead in emerging technologies like Blockchain, AI, and Web3.
+      {/* Who Am I Section */}
+      <section className="py-20 px-4 bg-gradient-to-r from-purple-900/10 to-blue-900/10">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 text-gradient">
+            Who Am 
+            <span className="text-blue-400 font-semibold"> I</span>
+            ?
+          </h2>
+          <p className="text-2xl md:text-2xl max-w-3xl mx-auto mb-4 text-gray-500">
+            I'm <span className="font-semibold text-blue-400">Divyanshu Pandey</span>,
+            a tech enthusiast from Indore, India. <br></br>
+            Passionate about 
+            <span className="text-purple-600 font-semibold"> Blockchain</span>, 
+            <span className="text-orange-600 font-semibold"> Web3</span>, 
+            <span className="text-green-500 font-semibold"> AI</span>, and 
+            <span className="text-blue-500 font-semibold"> MERN Stack Development</span>.
           </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-            Throughout my academic journey at <strong><a href="https://aitr.ac.in/"> AITR</a></strong>, I’ve worked on several exciting projects ranging from decentralized streaming platforms to productivity-focused systems.
-            My core strengths lie in full-stack development, problem-solving, and building user-centric web experiences.
-          </p>
-          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-            I thrive in collaborative environments, and I'm always eager to learn, innovate, and push boundaries through technology.
-          </p>
-
-          {/* Optional Socials */}
-          <div className="flex space-x-5 mt-6">
-            <a
-              href="https://github.com/yourgithub"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
-            >
-              <i className="fab fa-github text-2xl" />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourlinkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
-            >
-              <i className="fab fa-linkedin text-2xl" />
-            </a>
-            <a
-              href="mailto:your@email.com"
-              className="text-gray-700 dark:text-gray-300 hover:text-red-500"
-            >
-              <i className="fas fa-envelope text-2xl" />
-            </a>
-          </div>
         </div>
-      </div>
-    </motion.div>
+      </section>
+
+      <AboutHero />
+
+      {/* Timeline Section */}
+      <Timeline />
+
+      {/* Personal Touch Section */}
+      <PersonalTouch />
+
+      {/* Call to Action */}
+      <section className="py-20 px-4 text-center bg-gradient-to-r from-blue-900/20 to-purple-900/20">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gradient">
+          Let's Build Something Amazing Together 
+        </h2>
+        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate("/projects")}
+            className="px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg hover:shadow-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+          >
+            View My Projects
+          </motion.button>
+
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate("/contact")}
+            className="px-8 py-4 rounded-full font-semibold border-2 border-purple-500 text-purple-400 hover:bg-purple-600/20 hover:text-purple-300 transition-all duration-300"
+          >
+            Get In Touch
+          </motion.button>
+        </div>
+        </div>
+      </section>
+    </div>
   );
 }

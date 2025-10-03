@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { SiCplusplus, SiTailwindcss, SiPostman } from "react-icons/si";
+import { SiCplusplus, SiTailwindcss, SiPostman, SiFigma, SiN8N } from "react-icons/si";
 import { Icon } from "@iconify/react";
 import Avatar from "../assets/Avatar7.png";
 import {
@@ -57,6 +57,14 @@ const skills = [
       />
     ),
   },
+  {
+    name: "Figma",
+    icon: <SiFigma className="text-pink-500 text-5xl" />,
+  },
+  {
+    name: "n8n",
+    icon: <SiN8N className="text-red-500 text-5xl" />,
+  },
 ];
 
 const Skills = () => {
@@ -66,7 +74,7 @@ const Skills = () => {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.6 }}
-      className="min-h-screen px-4 sm:px-6 py-16 bg-[#f9f9f9] dark:bg-[#0e0e10] text-gray-900 dark:text-white"
+      className="min-h-screen px-4 sm:px-6 py-16 bg-gradient-to-br from-purple-900/10 to-blue-900/10"
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}

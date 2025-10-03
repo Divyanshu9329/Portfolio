@@ -7,7 +7,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="pt-24 md:pt-32 px-4 sm:px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10 min-h-[90vh] -mt-20"
+      className="bg-gradient-to-br from-purple-900/10 to-blue-900/10 pt-24 md:pt-32 px-4 sm:px-6 md:px-16 flex flex-col-reverse md:flex-row items-center justify-between gap-10 min-h-[90vh] -mt-20"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
