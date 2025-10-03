@@ -5,8 +5,8 @@ import { Mail, MessageCircle, MapPin, Clock, Github, Linkedin } from "lucide-rea
 export default function ContactInfo() {
   const contactMethods = [
     { icon: Mail, title: "Email", subtitle: "divyanshupandey9329@gmail.com", description: "Best for detailed discussions", color: "text-blue-700", bgColor: "bg-red-500/10", borderColor: "border-blue-500/30" },
-    { icon: Linkedin, title: "LinkedIn", subtitle: "@divyanshupandey", description: "Professional networking", color: "text-purple-600", bgColor: "bg-purple-500/10", borderColor: "border-purple-400/30" },
-    { icon: Github, title: "GitHub", subtitle: "@divyanshupandey", description: "Check out my code", color: "text-green-800", bgColor: "bg-green-500/10", borderColor: "border-green-400/30" },
+    { icon: Linkedin, title: "LinkedIn", subtitle: "@divyanshu-pandey-b51556286", description: "Professional networking", color: "text-purple-600", bgColor: "bg-purple-500/10", borderColor: "border-purple-400/30" },
+    { icon: Github, title: "GitHub", subtitle: "@Divyanshu9329", description: "Check out my code", color: "text-green-800", bgColor: "bg-green-500/10", borderColor: "border-green-400/30" },
   ];
 
   const quickInfo = [
